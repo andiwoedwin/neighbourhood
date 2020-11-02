@@ -8,7 +8,6 @@ from django.conf.urls.static import static
 
 
 urlpatterns = [
-   # path('mitaa/', views.index, name='index'), 
    path('ongeza_mtaa/', views.add_mtaa, name='add_mtaa'),
    path('post/<mtaa_id>', views.create_post, name='add_post'),
    path('', views.mitaa, name='mitaa_zote'),
