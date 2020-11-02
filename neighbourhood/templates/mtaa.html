@@ -2,8 +2,7 @@
 {% load crispy_forms_tags %}
 {% block content %}
 
-<div class="container">
-
+<div class="container>
     <h5 class="card-title">
         Welcome to your hood,{{ mtaa.name }} in {{mtaa.location}}
     </h5>
@@ -46,8 +45,8 @@
                         </h5>
                         <p class="card-text">{{biz.email}}</p>
                         <p class="card-text">{{biz.description}}</p>
-                        <p class="card-text">Owner: <small class="text-muted">
-                                {{ biz.user.user.username|title }}</small></p>
+                        <p class="card-text">Owner: 
+                                {{ biz.user.user.username|title }}</p>
                     </div>
                 </div>
                 {% endfor %}
@@ -56,8 +55,8 @@
                 <form action="" method="post">
                     {% csrf_token%}
                     {{form|crispy}}
-                    <button type="submit" class="btn btn-sm btn-success">Save Business</button>
-                    <button type="button" class="btn btn-sm btn-outline-danger " data-dismiss="modal">
+                    <button type="submit" class="btn btn-md btn-success">Save Business</button>
+                    <button type="button" class="btn btn-md btn-outline-danger " data-dismiss="modal">
                         Close
                     </button>
                 </form>
@@ -76,9 +75,9 @@
                     <div class="card-body">
                         <h5 class="card-title">{{post.post}}
                         </h5>
-                        <p class="card-text">By: <small class="text-muted">
-                                {{ post.user|title }}</small> <small
-                                style="float:right"> Posted on:{{ post.date|date}}</small></p>
+                        <p class="card-text">By: 
+                                {{ post.user|title }}
+                                 style="float:right"> Posted on:{{ post.date|date}}</p>
                     </div>
                 </div>
                 {% endfor %}
