@@ -47,8 +47,8 @@
         <div class="card-body">
             <div class="card-text">
                 <a href="{% url 'project-detail' project.id %}" class="article-title">
-                    <div style="background-image: url({{ https://images.unsplash.com/photo-1526000130-b9ea509bfbf3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60}});background-size: contain;position: sticky">
-                        <img src="{{ https://images.unsplash.com/photo-1526000130-b9ea509bfbf3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60 }}" style="visibility: hidden;" width="100%" />
+                    <div style="background-image: url({{ project.image.url}});background-size: contain;position: sticky">
+                        <img src="{{ project.image.url }}" style="visibility: hidden;" width="100%" />
                     </div>
                 </a>
             </div>
