@@ -1,0 +1,20 @@
+{% extends 'neighbourhood/base.html' %}
+{% load bootstrap3 %}
+{% load static %}
+
+{% block content%}
+<p>Show up</p>
+
+<div class="col">
+        <!-- Default input -->
+        <select name="neighborhood" class="form-control  form-control-lg">
+            {% for neighborhood in mitaa_zote %}
+            <option value="{{neighborhood.name}}">{{neighborhood.name}}</option>
+            {% endfor %}
+          </select>     
+      </div>
+
+{{ mitaa_zote.name }}
+{{ mitaa_zote.location }}
+
+{% endblock content%}
