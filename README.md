@@ -1,4 +1,4 @@
-## mtaa_yangu
+## My Neighbourhood
 
 ## Author
 Andiwo Edwin
@@ -7,6 +7,9 @@ Andiwo Edwin
 Mtaa_yangu is a web application that allows users to be in the loop about everything happening in their neighborhood. From contact information of different businesses to meeting announcements or even alerts.
 
 ## Live Link 
+https://andiwoneighbour.herokuapp.com/
+
+
 
 
 ## SetUp/Installations
